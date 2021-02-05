@@ -73,3 +73,33 @@ y=map(lambda x:x**2, numberList)
 print(list(y))
 
 #%% ITERATORS
+#icerisine girip for dongusuyle iterate edebildigimiz objeler: list,string,dictionaries
+#cok kullanmayacagiz.
+name='ronaldo'
+it=iter(name)
+print(next(it)) # r
+print(*it)      # o n a l d o
+
+#zip example
+list1=[1,2,3,4]
+list2=[5,6,7,8]
+z=zip(list1,list2)
+zList=list(z)
+print(zList)  # [(1, 5), (2, 6), (3, 7), (4, 8)]
+
+#unzip
+unzip=zip(*zList)
+unList1,unList2=list(unzip)
+print(unList1)
+print(unList2)
+print(type(unList1)) # tuple doner.
+
+#%% LIST COMPREHENSION
+num1=[1,2,3,4]
+num2=[i+1 for i in num1] #list comprehension
+print(num2) # [2, 3, 4, 5]
+
+#conditionals on iterable
+num1=[5,10,15]
+num2=[i**2 if i==10 else i-5 if i<7 else i+5 for i in num1]
+print(num2) # [0, 100, 20] i=10'sa kare al. i<7'se i-5 yap. kalanlara i+5 yap.
