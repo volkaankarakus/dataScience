@@ -10,8 +10,8 @@ In this part, you can learn:
 
 2) plotting line,scatter,and histogram
 
-3)basic dictionary features
+3) basic dictionary features
 
-4)basic pandas features like filtering that is actually something always used and main for being data scientist.
+4) basic pandas features like filtering that is actually something always used and main for being data scientist.
 
 5) while and for loops
